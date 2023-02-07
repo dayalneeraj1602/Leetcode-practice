@@ -12,21 +12,25 @@ class Solution
     {
        sort(a.begin(), a.end());
         sort(b.begin(),b.end());
-        int n=a.size(),m=b.size();
-        int count=0;
-        int ms=max(n,m);
-        for(int i=0;i<ms;i++)
-        {
-            if(a[i]==b[i]) 
-            count++;
-        }
-        if(count==ms)
-        {
-            return true;
-        }
+        if(a==b)
+        return true;
         else
-        {
-            return false; }
+        return false;
+        // int n=a.size(),m=b.size();
+        // int count=0;
+        // int ms=max(n,m);
+        // for(int i=0;i<ms;i++)
+        // {
+        //     if(a[i]==b[i]) 
+        //     count++;
+        // }
+        // if(count==ms)
+        // {
+        //     return true;
+        // }
+        // else
+        // {
+        //     return false; }
     }
 
 };
